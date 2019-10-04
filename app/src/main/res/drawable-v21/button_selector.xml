@@ -4,10 +4,29 @@
     <item>
         <selector>
             <item
-                android:drawable="@drawable/button_gradiant_2"
-                android:state_pressed="true" />
+                android:state_pressed="true" >
+                <shape android:shape="rectangle">
+                    <corners android:radius="8dp" />
+                    <gradient
+                        android:angle="270"
+                        android:endColor="@color/colorAccentLight"
+                        android:centerColor="@color/colorAccent"
+                        android:startColor="@color/colorAccent" />
+                </shape>
+            </item>
 
-            <item android:drawable="@drawable/button_gradiant_1" />
+            <item>
+                <shape android:shape="rectangle">
+
+                    <corners android:radius="8dp" />
+                    <gradient
+                        android:angle="90"
+                        android:endColor="@color/colorAccentLight"
+                        android:centerColor="@color/colorAccent"
+                        android:startColor="@color/colorAccent" />
+
+                </shape>
+            </item>
         </selector>
     </item>
 </ripple>
